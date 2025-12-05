@@ -1,71 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/12211/12211178.png">
-    <title>Seguridad Informatica</title>
+    <title>Seguridad Informática</title>
     <style>
         body {
             font-family: sans-serif;
-            font-style: italic;
-            font: bold 90%;
             font-size: 15pt;
             background-color: beige;
             margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: aquamarine;
+            text-align: center;
+            padding: 40px 10px;
         }
 
         h1 {
-            width: 100%;
-            padding: 50px;
             margin: 0;
+            font-style: italic;
         }
-        H2{
+
+        h2 {
             font-family: 'Times New Roman', Times, serif;
-            color:teal;
+            color: teal;
+            margin: 25px;
         }
 
-        DIV {
-
-            margin: 1px;
-            display: flex;
-            justify-content: center;
-
-        }
-
-        p,img {
+        p, img, video {
+            font-size: 18px;
             font-family: Arial, Helvetica, sans-serif;
             margin: 10px;
-
+            text-align: justify;
         }
-        .header {
-            background-color: aquamarine;
+
+       
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        
+        nav {
+            background-color: #005f73;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 8px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            background-color: #0a9396;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #94d2bd;
+            color: black;
+        }
+
+       
+        marquee h3 {
+            font-size: 22px;
+            font-family: Forte;
+            color: darkred;
         }
     </style>
 </head>
 
 <body>
-<div class="header">
-        <center><H1><B><u>LA SEGURIDAD INFORMATICA</u></B></H1></center>
-</div>
-<H2><u>¿QUE ES LA SEGURIDAD INFORMATICA?</u></H2>
-<div>
-<p>
-    La seguridad informática es un conjunto de 
-    técnicas y prácticas que protegen sistemas 
-    informáticos, redes y datos contra ataques, 
-    fallos y accesos no autorizados. 
-    Su objetivo principal es garantizar la confidencialidad 
-    (que la información sea secreta), la integridad 
-    (que no se modifique sin permiso) y la disponibilidad 
-    (que se pueda acceder a ella cuando se necesita) 
-    de los activos digitales. 
-</p>
-<video src="Imagenes/¿Qué es seguridad informática  _ Tipos de ataques informáticos _ Explicado en 5 minutos.mp4" controls swidth="800 " height="600 " ></video>
 
+    <header>
+        <h1><b><u>LA SEGURIDAD INFORMÁTICA</u></b></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Introducción</a></li>
+            <li><a href="#importancia">¿Por qué es importante?</a></li>
+            <li><a href="#virus">Tipos de Virus</a></li>
+            <li><a href="#antivirus">Antivirus</a></li>
+            <li><a href="#ciberataques">Tipos de Ciberataques</a></li>
+            <li><a href="#buenas_practicas">Buenas Prácticas</a></li>
+        </ul>
+    </nav>
+
+    <audio src="R.mp3" autoplay controls></audio>
+
+    <div class="container">
+
+        <section id="intro">
+            <h2><u>¿QUÉ ES LA SEGURIDAD INFORMÁTICA?</u></h2>
+
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+                <p style="flex: 1; min-width: 250px;">
+                    La seguridad informática es un conjunto de técnicas y prácticas que protegen sistemas
+                    informáticos, redes y datos contra ataques, fallos y accesos no autorizados. Su objetivo
+                    principal es garantizar la <b>confidencialidad</b>, <b>integridad</b> y <b>disponibilidad</b> de la
+                    información.La seguridad informática (también llamada ciberseguridad) es el conjunto de prácticas
+                    , técnicas, herramientas y normas destinadas a proteger la información, los 
+                    sistemas, las redes y los dispositivos frente a accesos no autorizados, 
+                    daños, robo, pérdida o interrupciones.
+                    Su objetivo principal es garantizar que los datos y servicios digitales 
+                    sean seguros, confiables y estén disponibles cuando se necesiten.
+                    En otras palabras: Protege lo que se sabe (datos), Protege dónde se guarda (equipos y redes).
+                    Protege cómo se usa (procesos y usuarios).
+                </p>
+
+                <video src="¿Qué es seguridad informática  _ Tipos de ataques informáticos _ Explicado en 5 minutos.mp4" controls style="flex: 1; max-width: 45%; min-width: 250px; border-radius: 10px;"></video>
+            </div>
+        </section>
+
+        <section id="importancia">
+            <h2><u>¿POR QUÉ ES IMPORTANTE?</u></h2>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+            <p style="flex: 1; min-width: 250px;">
+                Hoy en día, vivimos en un mundo conectado donde casi todo se gestiona digitalmente. La
+                seguridad informática evita pérdidas de información, robo de identidad, accesos no
+                autorizados, fraudes y daños a equipos o redes.
+                Es esencial porque hoy toda actividad humana depende de la tecnología: educación, medicina, 
+                bancos, redes sociales, empresas, gobiernos, etc. La información tiene un enorme valor.
+                La seguridad informática es crucial porque protege nuestros datos personales y financieros, 
+                sistemas y operaciones de ciberataques (phishing, malware, ransomware) que causan pérdidas económicas, 
+                interrupción del negocio y daño a la reputación, asegurando la confidencialidad, integridad y disponibilidad 
+                de la información en un mundo cada vez más digitalizado. Sin ella, estamos expuestos a robo de identidad, 
+                fraudes y pérdidas irreparables de información sensible. 
+                
+            </p>
+             <img src="blog-seguridad-informatica.jpg" width="300" height="200">
 </div>
+        </section>
+
+        <section id="virus">
+            <h2><u>TIPOS DE VIRUS INFORMÁTICOS</u></h2>
+            <ul>
+                <li><b>Gusanos:</b> Se replican por toda la red sin permiso.</li>
+                <li><b>Troyanos:</b> Se disfrazan de programas legítimos para entrar al sistema.</li>
+                <li><b>Ransomware:</b> Secuestra tus archivos y exige pago para recuperarlos.</li>
+                <li><b>Spyware:</b> Espía la actividad del usuario.</li>
+                <li><b>Adware:</b> Muestra publicidad no deseada.</li>
+            </ul>
+        </section>
+
+        <section id="antivirus">
+            <h2><u>ANTIVIRUS</u></h2>
+            <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+            <p style="flex: 1; min-width: 250px;">
+                Los antivirus son programas diseñados para detectar, bloquear y eliminar amenazas.
+                Algunos ejemplos populares son Windows Defender, Avast, Bitdefender y Kaspersky.
+                Los antivirus son programas de software diseñados para detectar, prevenir y eliminar malware,
+                 como virus, troyanos, ransomware y spyware, que pueden dañar un sistema o robar información. 
+                 Originalmente detectaban virus mediante la comparación con una base de datos de "firmas" conocidas, 
+                 pero las versiones modernas utilizan técnicas más avanzadas, como el análisis de comportamiento y el aprendizaje automático, 
+                 para identificar y detener amenazas nuevas y desconocidas. 
+            </p>
+             <img src="virus-informatico.jpg" width="300" height="200">
+</div>
+        </section>
+
+        <section id="ciberataques">
+            <h2><u>TIPOS DE CIBERATAQUES</u></h2>
+            <ul>
+                <li><b>Phishing:</b> Correos falsos que buscan engañar al usuario.</li>
+                <li><b>DDoS:</b> Saturan un servidor para que deje de funcionar.</li>
+                <li><b>Ingeniería Social:</b> Manipulación psicológica para obtener datos.</li>
+                <li><b>Fuerza Bruta:</b> Pruebas repetidas para adivinar contraseñas.</li>
+                <li><b>Exploits:</b> Ataques que aprovechan vulnerabilidades del sistema.</li>
+            </ul>
+        </section>
+
+        <section id="buenas_practicas">
+            <h2><u>BUENAS PRÁCTICAS DE CIBERSEGURIDAD</u></h2>
+            <ul>
+                <li>Usar contraseñas fuertes y diferentes para cada cuenta.</li>
+                <li>Actualizar periódicamente sistemas y aplicaciones.</li>
+                <li>No abrir correos sospechosos.</li>
+                <li>Realizar copias de seguridad frecuentes.</li>
+                <li>Evitar redes WiFi públicas para información sensible.</li>
+                <li>Utilizar autenticación en dos pasos.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <marquee scrollamount="10" behavior="alternate">
+        <h3>La Seguridad Informática: La Defensa de Nuestra Información</h3>
+    </marquee>
+
+<script>
+
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.returnValue = '';
+});
+
+
+window.onload = function() {
+    alert('¡Bienvenido a la página de Seguridad Informática!');
+};
+
+
+const btn = document.createElement('button');
+btn.textContent = '↑ Arriba';
+btn.style.position = 'fixed';
+btn.style.bottom = '20px';
+btn.style.right = '20px';
+btn.style.padding = '10px 15px';
+btn.style.borderRadius = '10px';
+btn.style.border = 'none';
+btn.style.background = '#0a9396';
+btn.style.color = 'white';
+btn.style.cursor = 'pointer';
+btn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+document.body.appendChild(btn);
+
+
+const nav = document.querySelector('nav');
+nav.addEventListener('mouseover', () => {
+    console.log('Navegando por el menú...');
+});
+</script>
 </body>
-
 </html>
-
